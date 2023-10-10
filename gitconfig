@@ -1,0 +1,46 @@
+[push]
+         default = current
+
+ [checkout]
+         defaultRemote = origin
+
+ [diff]
+         algorithm = patience
+         compactionHeuristic = true
+
+ [alias]
+         st = status
+         br = branch
+         brn = branch -m
+         df = diff
+         lg = log
+	 # --graph -oneline
+	 # --graph
+	 lgp = log --color --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%C(yellow)%d %C(bold blue)%an%Creset - %s %Creset' --abbrev=8
+	 lga = log --all --color --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%C(yellow)%d %C(bold blue)%an%Creset - %s %Creset' --abbrev=8
+         pl = pull
+         ft = fetch
+         ps = push
+         pf = push -f
+	 # --force-with-lease
+         af = add
+         ap = add -p
+         aa = add .
+         co = checkout
+         cop = checkout -p
+         coa = checkout .
+         com = checkout main
+         cos = checkout staging
+         con = checkout -b
+         cm = commit -m
+	 cma = commit --amend
+         rbs = rebase staging
+         rbc = rebase --continue
+         rba = rebase --abort
+         rb = rebase
+         
+[init]
+	defaultBranch = main
+[user]
+	name = Maria
+	email = mariacantocastro@gmail.com
