@@ -1,8 +1,25 @@
-.DS_Store
-.ctags
-tags
-.idea
-.vscode
-debug.text
-.goimportsignore
-.history
+# Ignore local configuration files that may contain sensitive data
+*.keys
+*.secrets
+
+# Ignore editor and IDE specific files
+*.swp
+*.swo
+*.DS_Store
+.vscode/
+.idea/
+
+# Ignore system-specific files
+*.log
+*.tmp
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore environment-specific configurations
+.env
+.env.local
+
+# Ignore personal settings files
+*.local
